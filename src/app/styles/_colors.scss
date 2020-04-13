@@ -1,0 +1,19 @@
+// $accent: #04a2d5;
+$accent: #8da3b5;
+// $body-bg: #101010;
+$body-bg: #6ea1e2;
+$body-color: #101010;
+$alt-bg: #202020;
+$alt-color: #f2f2f2;
+
+.accent-color {
+  color: $accent;
+}
+
+.footer-fg {
+  color: $alt-color;
+}
+
+.text-color {
+  color: $alt-color;
+}

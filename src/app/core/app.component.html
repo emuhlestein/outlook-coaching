@@ -1,0 +1,47 @@
+<div class="site">
+  <div class="site-content">
+    <div class="container">
+      <ul class="nav-bar-items float-right mt-3">
+        <li><a class="nav-bar-item" [routerLink]="['\home']" routerLinkActive="active">
+            <i class="d-none d-sm-inline-block fas fa-home mx-1"></i>Home</a></li>
+        <li><a class="nav-bar-item" [routerLink]="['\about']" routerLinkActive="active">
+            <i class="d-none d-sm-inline-block fas fa-info-circle mx-1"></i>About</a></li>
+        <li><a class="nav-bar-item" [routerLink]="['\contact']" routerLinkActive="active">
+            <i class="d-none d-sm-inline-block fas fa-envelope mx-1"></i>Contact</a></li>
+      </ul>
+      <!-- <nav class="navbar navbar-expand">
+        <span class="navbar-nav">
+          <a class="nav-item nav-link" [routerLink]="['/home']" routerLinkActive="active"><i
+              class="d-none d-sm-inline-block fas fa-home mx-1"></i>Home</a>
+          <a class="nav-item nav-link" [routerLink]="['/about']" routerLinkActive="active"><i
+              class="d-none d-sm-inline-block fas fa-info-circle mx-1"></i>About</a>
+          <a class="nav-item nav-link" [routerLink]="['/contact']" routerLinkActive="active"><i
+              class="d-none d-sm-inline-block fas fa-envelope mx-1"></i>Contact</a>
+        </span>
+      </nav> -->
+    </div>
+    <div class="header container">
+      <div class="name-logo float-right">
+        <h1 class="outlook-text">Outlook Coaching</h1>
+        <h2>Bobi Muhlestein</h2>
+      </div>
+      <main [@routeAnimations]="prepareRoute(outlet)" class="main-content">
+        <router-outlet #outlet="outlet"></router-outlet>
+      </main>
+    </div>
+    <footer class="footer container">
+      <div class="row">
+        <div class="footer-fg col-12 col-sm-6">
+          <p>Copyright © 2020 Ed Muhlestein</p>
+        </div>
+        <div class="col-12 col-sm-6">
+          <ul class="social-icons footer-fg float-right mt-3 mr-3">
+            <li>
+              <a class="fab fa-facebook footer-fg" target="_blank"
+                href="https://www.facebook.com/Outlook-Coaching-102419171364136/"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </div>

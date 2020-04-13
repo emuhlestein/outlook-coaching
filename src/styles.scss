@@ -1,1 +1,10 @@
+@import "./app/styles/material.scss";
+
 /* You can add global styles to this file, and also import other style files */
+@import "./app/styles/_colors";
+
+@import "~bootstrap/scss/bootstrap";
+
+@import "./app/styles/outlook-coaching.scss";
+
+@import "./app/styles/fonts-allura.scss";

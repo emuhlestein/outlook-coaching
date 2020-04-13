@@ -1,0 +1,121 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+.site {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.site-content {
+  flex: 1; // force the footer to bottom of page
+}
+
+.header {
+  background: url("./assets/images/lighthouse.jpg") no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  min-height: 300px;
+  padding-top: 380px;
+  padding-bottom: 100px;
+  margin-top: 0px;
+
+  .outlook-text {
+    font-family: "allura";
+    font-size: 72px;
+    list-style: none;
+    margin-top: -80px;
+    margin-right: 80px;
+    margin-bottom: 0px;
+  }
+}
+
+.main-content {
+  margin-top: 100px;
+}
+
+.footer {
+  position: relative;
+  bottom: 1.25rem;
+  color: $alt-color;
+  border-top: 3px solid $accent;
+  background-color: $alt-bg;
+
+  p {
+    padding-top: 1.25rem;
+  }
+
+  .social-icons {
+    li {
+      list-style: none;
+      color: $alt-color;
+
+      a {
+        transition: color 0.2s ease-in;
+
+        &:hover {
+          color: $accent;
+        }
+      }
+    }
+  }
+}
+
+.nav-bar-items {
+  li {
+    display: inline-block;
+    list-style: none;
+    a {
+        padding: 0.75rem 1rem;
+        text-align: center;
+    }
+  }
+}
+
+// .navbar {
+//   background: transparent;
+//   // border-bottom: 3px solid $accent;
+
+//   .navbar-nav .nav-link {
+//     color: $alt-color;
+//     padding: 1rem 0.5rem;
+//     transition: color 0.2s ease-in;
+
+//     &.active {
+//       color: $accent;
+//     }
+
+//     &.hover:not(.active) {
+//       color: rgba($alt-color, 0.75);
+//     }
+//   }
+// }
+
+.mat-card {
+  color: $alt-color;
+  background-color: $alt-bg;
+
+  .mat-card-header-text {
+    margin: 0rem 0.5rem;
+  }
+}
+
+@keyframes zoomInRight {
+  from {
+    opacity: 0;
+    transform: scale3d(0.1, 0.1, 0.1) translate3d(1000px, 0, 0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+
+  60% {
+    opacity: 1;
+    transform: scale3d(0.475, 0.475, 0.475) translate3d(-10px, 0, 0);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+  }
+}
+
+.zoomInRight {
+  animation-name: zoomInRight;
+}
